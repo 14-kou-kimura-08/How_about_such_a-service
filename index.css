@@ -47,21 +47,22 @@ body {
     line-height: 45px;
 }
 
-.theme {
+.theme span{
     font-weight: bold;
+    background: linear-gradient(transparent 70%, #fff528 70%);
 }
 
 .button{
     width: 50%;
     text-align: center;
     margin: 0 auto;
-    padding: 7px 0px;
+    padding: 10px 0px;
 	border-radius: 5px;
-    text-decoration: none;
     color: rgb(44, 44, 44);
     background-color: #eeeeee;
     transition: .2s;
     cursor: pointer;
+    font-size: 18px;
 }
 
 .button:hover {
@@ -119,9 +120,9 @@ img {
   animation: load7 1.8s infinite ease-in-out;
 }
 .loader {
-  color: #ffffff;
+  color: #aeb3b9;
   font-size: 7px;
-  margin: 0px auto 50px;
+  margin: 10px auto 60px;
   position: relative;
   text-indent: -9999em;
   -webkit-transform: translateZ(0);
