@@ -4,18 +4,18 @@
 		<meta charset="utf-8">
 		<title>idea_mix</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script> -->
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
 		<!-- 開発用 -->
-		<script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script> -->
 		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 		<link rel="stylesheet" href="./index.css">
 	</head>
 	<body>
 		<div id="app">
 			<div class="card">
-					<div class="loader" v-if="!articles.modifier"></div>
-					<p class="theme">{{ articles.modifier }} {{ articles.service }}</p>
-					<p v-if="articles.modifier">どんなサービス？</p>
+					<div class="loader" v-if="!datas.modifier"></div>
+					<p class="theme">{{ datas.modifier }} {{ datas.service }}</p>
+					<p v-if="datas.modifier">どんなサービス？</p>
 			</div>
 			<img src="./discussion.png" alt="">
 			<div class="button" v-on:click.prevent="reload">発想を変える</div>
