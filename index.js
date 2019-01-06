@@ -6,6 +6,13 @@ new Vue({
   methods: {
     reload: function() {
       location.reload();
+    },
+    twitter: function() {
+      var tw_contents = "【" + this.datas.modifier + this.datas.service + "】";
+      window.open().location.href =
+        "https://twitter.com/intent/tweet?text=" +
+        tw_contents +
+        "&hashtags=HowAboutSuchAService&lang=ja";
     }
   },
   mounted() {

@@ -16,6 +16,7 @@
 		<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script> -->
 		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 		<link rel="stylesheet" href="./index.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	</head>
 	<body>
 		<div id="app">
@@ -25,8 +26,10 @@
 					<p v-if="datas.modifier">どんなサービスだと思う？</p>
 			</div>
 			<img src="./discussion.png" alt="">
+			<div class="button twitter" v-on:click.prevent="twitter"><i class="fab fa-twitter"></i>アイディアをツイートする</div>
 			<div class="button" v-on:click.prevent="reload">発想を変えてみる</div>
 		</div>
 		<script src="index.js"></script>
+		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 	</body>
 </html>
